@@ -1,0 +1,19 @@
+.product{
+    display:flex ;
+    align-items: center;
+   
+}
+.image{
+    background-color: rgb(237, 225, 248);
+    border-radius:12px;
+    margin-left:30px;
+    margin-right: 120px;
+}
+.img{
+    width: 400px;
+    height: 350px;
+}
+.info{
+    width:650px;
+}
+

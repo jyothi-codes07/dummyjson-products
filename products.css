@@ -1,0 +1,52 @@
+            #products{
+                display:grid;
+                grid-template-columns: repeat(3,1fr);
+                gap:10px;  
+                margin-left:80px;
+            }
+            .card{
+                width:350px; 
+            }
+            .card-img-top{
+                background-color: rgb(243, 228, 247);
+                height:230px;
+                margin-bottom:20px;
+            }
+            .btn{
+                margin-left:25%;
+            }
+            .header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between; 
+            
+            }
+            .search-product{
+             display: flex;
+             align-items: center;
+             margin-right: 35px;
+            }
+            .name{
+                display: flex;
+               
+            }
+            .cat{
+                margin-left:50px;
+                padding: 30px;
+            }
+            .category-btn{
+            padding:8px 15px;
+            margin:5px;
+            border:1px solid blueviolet;
+         background-color:white;
+           color:blueviolet;
+           border-radius:5px;
+           cursor:pointer;
+
+}
+.category-btn:hover{
+    background-color: blueviolet;
+    color: white;
+}
+        
+           

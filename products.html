@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>JSON Example</title>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link href="products.css" rel="stylesheet"> 
+      
+    </head>
+<body>
+    
+    
+    <div class="header">
+    <div class="name">
+    <h1 style="margin-left:80px;color: rgb(131, 9, 246);">Products</h1>
+  
+    </div>
+    <div class="search-product">
+            <input type="search" id="searchInput" placeholder="search product" class="form-control" style="width:250px;">
+            <button class="btn btn-primary" id="searchBtn"style="margin-left:4px;">Search</button>
+    </div>
+    </div>
+    <div class="cat">
+    <div id="Buttons"></div>
+    </div>
+    <div id="products"></div>
+    
+        <template id="product-template">
+        <div class="card">
+        <div class="card-body">
+        <img class="card-img-top" alt="...">
+        <h5 class="card-title"></h5>
+        <h6 class="price" style="color: blueviolet;"></h6>
+        <p class="card-text"></p>
+        <a href="#" class="btn btn-primary"></a>
+        </div>
+        </div>
+        </template>
+        <script src="products.js"></script>
+    
+</body>
+</html>
