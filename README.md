@@ -4,22 +4,22 @@ A responsive product browsing web application built using **HTML, CSS, and JavaS
 
 ## ✨ Features
 
-- 📦 Display products dynamically
-- 🔍 Search products by name or keyword
-- 🗂️ Filter products by category
-- 🖼️ Display product images and descriptions
-- 💰 Show product prices
-- ⭐ Display ratings and stock information
-- 📄 View detailed information for each product
-- 📱 Responsive interface using Bootstrap
-- 🌐 Fetches real-time product data from DummyJSON API
+- 📦 Dynamic product listing
+- 🔍 Product search functionality
+- 🗂️ Category-based filtering
+- 🖼️ Product images and descriptions
+- 💰 Product pricing and discount information
+- ⭐ Product ratings and stock details
+- 📄 Individual product details page
+- 📱 Responsive design using Bootstrap
+- 🌐 Integration with DummyJSON REST API
 
 ## 🛠️ Technologies Used
 
-- **HTML5** – Structure and layout
+- **HTML5** – Structure and page layout
 - **CSS3** – Custom styling
-- **JavaScript** – Dynamic content, API calls, search and filtering
-- **Bootstrap 5** – Responsive UI components and styling
+- **JavaScript** – API integration, DOM manipulation, search and filtering
+- **Bootstrap 5** – Responsive design and UI components
 - **DummyJSON API** – Product and category data
 
 ## 📁 Project Structure
@@ -27,16 +27,16 @@ A responsive product browsing web application built using **HTML, CSS, and JavaS
 ```text
 dummyjson-products/
 │
-├── products.html       # Main product listing page
-├── products.css        # Styling for product listing
-├── products.js         # Product fetching, search and category filtering
+├── products.html        # Product listing page
+├── products.css         # Product listing styles
+├── products.js          # Product fetching, search and filtering
 │
-├── product.html        # Product details page
-├── product.css         # Styling for product details
-├── product.js          # Fetches and displays individual product details
+├── product.html         # Product details page
+├── product.css          # Product details styles
+├── product.js           # Individual product data and details
 │
-├── data.json           # Local product data
-└── README.md           # Project documentation
+├── data.json            # Local JSON data
+└── README.md            # Project documentation
 ```
 
 ## 🚀 How to Run
@@ -48,8 +48,6 @@ git clone <your-repository-url>
 ```
 
 ### 2. Open the project
-
-Navigate to the project folder:
 
 ```bash
 cd dummyjson-products
@@ -63,9 +61,9 @@ For the best experience, use **VS Code with the Live Server extension** or anoth
 
 ## 🔗 API Used
 
-This project uses the **DummyJSON Products API** to retrieve product and category information.
+The project uses the **DummyJSON Products API** for retrieving product and category information.
 
-Main endpoints used:
+Main endpoints include:
 
 ```text
 https://dummyjson.com/products
@@ -78,58 +76,60 @@ https://dummyjson.com/products/{id}
 ## 🔄 Application Flow
 
 ```text
-User opens Products page
-        ↓
-Fetch products from DummyJSON API
-        ↓
+User opens Products Page
+          ↓
+Fetch product data from DummyJSON API
+          ↓
 Display product cards
-        ↓
- ┌───────────────┬────────────────┐
- ↓               ↓                ↓
-Search         Category        View Details
- ↓               ↓                ↓
-Filter          Filter          Product Page
-products        products        with details
+          ↓
+     ┌────┴─────┐
+     ↓          ↓
+  Search     Category
+     ↓          ↓
+   Filter    Filter
+     └────┬─────┘
+          ↓
+   View Product Details
+          ↓
+    Product Details Page
 ```
 
 ## 🔍 Search & Filtering
 
-The application supports:
+The application allows users to:
 
-- Searching for products using keywords
-- Searching by category name
-- Filtering products using category buttons
-- Returning to the complete product list using **All Products**
+- Search products using keywords
+- Filter products by category
+- View all available products
+- Select a product to view its complete details
 
 ## 📄 Product Details
 
-Selecting **View Details** opens a separate product details page containing:
+The product details page displays information such as:
 
 - Product name
+- Product image
 - Price
 - Description
 - Category
 - Discount percentage
 - Rating
-- Stock
-- Availability
+- Stock availability
 - Warranty information
 - Shipping information
-- Product image
-```
 
 ## 🎯 Learning Outcomes
 
 This project demonstrates practical implementation of:
 
-- JavaScript DOM manipulation
-- Asynchronous JavaScript using `async/await`
-- REST API integration using `fetch()`
-- Dynamic HTML rendering
-- Search and filtering functionality
-- URL query parameters
-- JavaScript event handling
-- Bootstrap-based responsive design
+- REST API integration
+- JavaScript `fetch()` and `async/await`
+- DOM manipulation
+- Dynamic content rendering
+- Search and filtering
+- Event handling
+- URL parameters
+- Responsive web design using Bootstrap
 
 ## 📌 Future Enhancements
 
@@ -138,5 +138,5 @@ This project demonstrates practical implementation of:
 - Add price-range filtering
 - Add pagination
 - Add wishlist functionality
-- Improve mobile responsiveness
-- Add loading indicators and error messages
+- Add loading and error states
+- Further improve mobile responsiveness
